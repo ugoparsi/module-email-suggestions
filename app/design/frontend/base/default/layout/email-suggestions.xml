@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+SPDX-FileCopyrightText: 2026 Ugo Parsi
+SPDX-License-Identifier: AFL-3.0
+-->
+<layout>
+    <email_suggestions>
+        <reference name="head">
+            <action method="addJs"><script>email-suggestions/email-suggestions.js</script></action>
+        </reference>
+    </email_suggestions>
+    <customer_account_create>
+        <update handle="email_suggestions"/>
+    </customer_account_create>
+    <customer_account_login>
+        <update handle="email_suggestions"/>
+    </customer_account_login>
+    <checkout_onepage_index>
+        <update handle="email_suggestions"/>
+    </checkout_onepage_index>
+</layout>

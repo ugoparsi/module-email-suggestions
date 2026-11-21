@@ -1,0 +1,10 @@
+{
+    "name": "ugoparsi/module-email-suggestions",
+    "description": "Email domain suggestions for Maho storefront forms",
+    "type": "maho-module",
+    "license": "AFL-3.0",
+    "require": {
+        "php": ">=8.5.1",
+        "mahocommerce/maho": "^26.11 || ^27.1"
+    }
+}

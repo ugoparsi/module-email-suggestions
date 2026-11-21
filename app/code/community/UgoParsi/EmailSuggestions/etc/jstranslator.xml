@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+SPDX-FileCopyrightText: 2026 Ugo Parsi
+SPDX-License-Identifier: AFL-3.0
+-->
+<jstranslator>
+    <script path="email-suggestions/email-suggestions.js" module="core">
+        <email-suggestion translate="message">
+            <message>Use @%s</message>
+        </email-suggestion>
+    </script>
+</jstranslator>

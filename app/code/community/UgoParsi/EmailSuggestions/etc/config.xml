@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+SPDX-FileCopyrightText: 2026 Ugo Parsi
+SPDX-License-Identifier: AFL-3.0
+-->
+<config>
+    <modules>
+        <UgoParsi_EmailSuggestions>
+            <version>1.0.0</version>
+        </UgoParsi_EmailSuggestions>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <emailsuggestions>
+                    <file>email-suggestions.xml</file>
+                </emailsuggestions>
+            </updates>
+        </layout>
+    </frontend>
+</config>
