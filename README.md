@@ -2,15 +2,15 @@
 
 Offer customers a correction when the email domain they enter on the account registration or guest checkout form looks like a typo. For example, `shopper@gmial.com` prompts the customer to use `shopper@gmail.com`.
 
-## Install
+## Install the domain-check preview
 
-Requires PHP 8.5.1 or later and Maho 26.11.x or 27.1.x. Tested on Maho 26.11.0, Maho 26.11.3, and the Maho 27.1 development branch.
+Requires PHP 8.5.1 or later and Maho 26.11.x or 27.1.x. The preview was tested on Maho 26.11.3 and the Maho 27.1 development branch. The stable suggestion release was also tested on Maho 26.11.0.
 
 Run these commands from the root of your Maho project.
 
 ```bash
 composer config repositories.ugoparsi-email-suggestions vcs https://github.com/ugoparsi/module-email-suggestions
-composer require 'ugoparsi/module-email-suggestions:^1.0'
+composer require 'ugoparsi/module-email-suggestions:dev-preview-email-domain-check'
 ./maho cache:flush
 ```
 
