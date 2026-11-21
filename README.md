@@ -9,7 +9,8 @@ Requires PHP 8.5.1 or later and Maho 26.11.x or 27.1.x. The module was tested on
 Run these commands from the root of your Maho project.
 
 ```bash
-composer require ugoparsi/module-email-suggestions
+composer config repositories.ugoparsi-email-suggestions vcs https://github.com/ugoparsi/module-email-suggestions
+composer require 'ugoparsi/module-email-suggestions:^1.0'
 ./maho cache:flush
 ```
 
