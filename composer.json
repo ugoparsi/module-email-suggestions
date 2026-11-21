@@ -5,6 +5,7 @@
     "license": "AFL-3.0",
     "require": {
         "php": ">=8.5.1",
+        "amphp/dns": "^2.4",
         "mahocommerce/maho": "~26.11.0 || ~27.1.0"
     }
 }

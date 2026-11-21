@@ -8,6 +8,9 @@ SPDX-License-Identifier: AFL-3.0
         <reference name="head">
             <action method="addJs"><script>email-suggestions/email-suggestions.js</script></action>
         </reference>
+        <reference name="before_body_end">
+            <block type="core/template" name="email_suggestions.domain_check" template="email-suggestions/domain-check.phtml"/>
+        </reference>
     </email_suggestions>
     <customer_account_create>
         <update handle="email_suggestions"/>

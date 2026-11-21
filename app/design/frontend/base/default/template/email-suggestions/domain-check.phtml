@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * SPDX-FileCopyrightText: 2026 Ugo Parsi
+ * SPDX-License-Identifier: AFL-3.0
+ */
+
+if (!Mage::getStoreConfigFlag('customer/email_suggestions/check_domain')) {
+    return;
+}
+?>
+<script defer
+    src="<?= $this->escapeHtml($this->getJsUrl('email-suggestions/email-domain-check.js')) ?>"
+    data-endpoint="<?= $this->escapeHtml($this->getUrl('email-suggestions/domain/check', ['_secure' => Mage::app()->isCurrentlySecure()])) ?>"
+    data-form-key="<?= $this->escapeHtml(Mage::getSingleton('core/session')->getFormKey()) ?>"
+    data-message="<?= $this->escapeHtml($this->__('Check the email address. This domain does not appear to accept email.')) ?>"
+></script>

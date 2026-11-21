@@ -9,6 +9,13 @@ SPDX-License-Identifier: AFL-3.0
             <version>1.0.0</version>
         </UgoParsi_EmailSuggestions>
     </modules>
+    <global>
+        <services>
+            <emailsuggestions>
+                <class>UgoParsi_EmailSuggestions_Service</class>
+            </emailsuggestions>
+        </services>
+    </global>
     <frontend>
         <layout>
             <updates>
@@ -18,4 +25,16 @@ SPDX-License-Identifier: AFL-3.0
             </updates>
         </layout>
     </frontend>
+    <default>
+        <system>
+            <rate_limit>
+                <email_suggestions_domain>30</email_suggestions_domain>
+            </rate_limit>
+        </system>
+        <customer>
+            <email_suggestions>
+                <check_domain>0</check_domain>
+            </email_suggestions>
+        </customer>
+    </default>
 </config>
