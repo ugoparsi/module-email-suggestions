@@ -4,7 +4,7 @@ Offer customers a correction when the email domain they enter on the account reg
 
 ## Install
 
-Requires PHP 8.5.1 or later and Maho 26.11.x or 27.1.x. The module was tested on the Maho 27.1 development branch.
+Requires PHP 8.5.1 or later and Maho 26.11.x or 27.1.x. Tested on Maho 26.11.0, Maho 26.11.3, and the Maho 27.1 development branch.
 
 Run these commands from the root of your Maho project.
 
